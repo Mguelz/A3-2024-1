@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>ShowSpot</title>
+        <style>
+           body{
+            font-family: Arial, sans-serif;
+           }
+           header{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 10em;
+            margin-left:5%;
+           }
+
+           #menu {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 7em;
+            margin-right: 7%;
+            width: 100%;
+           }
+
+           .menu-item{
+            font-size: 20px;
+           }
+
+           #content {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 5em;
+            margin-top: 5%;
+            justify-items: center;
+            align-items: center;
+           }
+
+           .event-card{
+            background-color: #ffd700;
+            width: 200px;
+            height: 120px;
+            border-radius: 12px;
+            border: solid 1px black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           }
+
+           .event-title{
+            font-weight: bold;
+           }
+
+           .event-description{
+            margin-left: 8%;
+           }
+
+           .event-image{
+            max-width: 150%;
+            min-height: 120%;
+            border-radius: 12px;
+           }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <h1>ShowSpot</h1>
+            </div>
+            <nav id="menu">
+                <span class="menu-item"><strong>Eventos</strong></span>
+                <span class="menu-item">Meus Pedidos</span>
+                <span class="menu-item">Carrinho</span>
+                <span class="menu-item">Meus Dados</span>
+            </nav>
+        </header>
+
+        <div id="content">
+            <div>
+                <div class="event-card">
+                    <img src="pagofunk.jpg" alt="PagoFunk" class="event-image">
+                </div>
+                <div class="event-description">
+                    <p class="event-title">PAGOFUNK</p>
+                    <p>Pacco Club </br>
+                    19 de Abril</p>
+                </div>
+            </div>
+            <div>
+                <div class="event-card">
+                    <img src="mackejada.png" alt="Mackejada" class="event-image">
+                </div>
+                <div class="event-description">
+                    <p class="event-title">MACKEJADA</p>
+                    <p>Club A </br>
+                    19 de Abril</p>
+                </div>
+            </div>
+
+
+            <div>
+                <div class="event-card">
+                    <img src="baileunip.jpg" alt="BaileUnip" class="event-image">
+                </div>
+                <div class="event-description">
+                    <p class="event-title">BAILE UNIP</p>
+                    <p>Expo Barra Funda </br>
+                    19 de Abril</p>
+                </div>
+            </div>
+       
+
+            <div>
+                <div class="event-card">
+                    <img src="tardezinha.png" alt="Tardezinha" class="event-image">
+                </div>
+                <div class="event-description">
+                    <p class="event-title">TARDEZINHA VIBES</p>
+                    <p>Servus Beer </br>
+                    20 de Abril</p>
+                </div>
+            </div>
+        
+            <div>
+                <div class="event-card">
+                    <img src="supertenda.png" alt="SuperTenda" class="event-image">
+                </div>
+                <div class="event-description">
+                    <p class="event-title">SUPERTENDA 2024</p>
+                    <p>Neo Quimica Arena </br>
+                    20 de Abril</p>
+                </div>
+            </div>
+
+
+            <div>
+                <div class="event-card">
+                    <img src="quintauniversitaria.png" alt="Quinta Universitária" class="event-image">
+                </div>
+                <div class="event-description">
+                    <p class="event-title">QUINTA UNIVERSITÁRIA</p>
+                    <p>Une Bauru </br>
+                    18 de Abril</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="event-card">
+                    <img src="festadobranco.png" alt="Festa do Branco" class="event-image">
+                </div>
+                <div class="event-description">
+                    <p class="event-title">FESTA DO BRANCO</p>
+                    <p>Complexo do Canindé</br>
+                    26 de Abril</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="event-card">
+                    <img src="sollune.png" alt="Sollune Comunicari" class="event-image">
+                </div>
+                <div class="event-description">
+                    <p class="event-title">SOLLUNE COMUNICARI</p>
+                    <p>Vila dos Ipes</br>
+                    20 de Abril</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="event-card">
+                    <img src="opensunset.jpg" alt="Open Sunset" class="event-image">
+                </div>
+                <div class="event-description">
+                    <p class="event-title">OPEN SUNSET</p>
+                    <p>Double Deck</br>
+                    20 de Abril</p>
+                </div>
+            </div>
+
+        </div>
+        
+
+        <script src=""></script>
+
+    </body>
+    </html>
+
