@@ -4,10 +4,11 @@ import { Genero } from "./genero.entity";
 @Entity()
 export class Catalogo{
     @PrimaryGeneratedColumn()
-    id_catalogo: number
+    id_catalogoItens: number
 
-    @OneToOne(() => Genero) @JoinColumn()
-    id_genero: number;
+    // este trecho ja esta no Catalogo
+    // @OneToOne(() => Genero) @JoinColumn()
+    // id_genero: number;
 
 
     @Column({length: 40})

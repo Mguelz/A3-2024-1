@@ -1,19 +1,17 @@
-import { Column, Entity, OneToOne, JoinColumn, ManyToOne } from "typeorm";
-import { CarrinhoCabeca } from "./carrinhoCabeca.entity";
+import { Column, Entity, OneToOne, JoinColumn, ManyToOne } from 'typeorm';
+import { CarrinhoCabeca } from './carrinhoCabeca.entity';
 
 @Entity()
 export class CarrinhoIten {
+  @ManyToOne(() => CarrinhoCabeca)
+  @JoinColumn()
+  id_carrinhoIten: number;
 
-    @ManyToOne(() => CarrinhoCabeca) @JoinColumn()
-    id_carrinhoIten: number;
+  @Column({ length: 7, precision: 2 })
+  preco: number;
 
-    @Column({ length: 7, precision: 2 })
-    preco: number;
-
-    @Column({ length: 3 })
-    quantidade: number;
-
-
+  @Column({ length: 3 })
+  quantidade: number;
 }
 
 // Table carrinhoIten{
