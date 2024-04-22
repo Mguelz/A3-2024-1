@@ -7,7 +7,7 @@ export class Catalogo{
     id_catalogo: number
 
     @OneToOne(() => Genero) @JoinColumn()
-    id_genero: string;
+    id_genero: number;
 
 
     @Column({length: 40})
