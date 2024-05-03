@@ -33,3 +33,34 @@ export class Catalogo {
 // preco_unitario numeric(7,2)
 //       disponivel int
 //       vendido int
+
+// //////////////////////////////////////////////////////////////////////////
+// //////////////////////////////////////////////////////////////////////////
+// //////////////////////////////////////////////////////////////////////////
+// //////////////////////////////////////////////////////////////////////////
+// //////////////////////////////////////////////////////////////////////////
+
+@Entity()
+export class CatalogoIten{
+    @PrimaryGeneratedColumn()
+    id_catalogoItens: number
+
+    // este trecho ja esta no Catalogo
+    // @OneToOne(() => Genero) @JoinColumn()
+    // id_genero: number;
+
+
+    @Column({length: 40})
+    descricao: string;
+
+    @Column({length: 100})
+    iamgem: string;
+
+}
+
+// Table CataloItens{
+//       id_CatalogoIten int [pk, increment]
+//       id_Catalogo int [ref: > Catalogo.id_catalogo]
+//       descricao varchar(20)
+//       
+//     }

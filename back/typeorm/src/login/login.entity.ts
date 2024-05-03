@@ -6,7 +6,7 @@ import {
   PrimaryGeneratedColumn,
 } from 'typeorm';
 import { Perfil } from './perfil.entity';
-import { CarrinhoCabeca } from './carrinhoCabeca.entity';
+import { CarrinhoCabeca } from './carrinho.entity';
 
 @Entity()
 export class Login {
