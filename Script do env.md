@@ -1,0 +1,9 @@
+DB_TYPE=mysql
+DB_HOST=localhost # ou  172.0.0.1
+DB_PORT=3306
+DB_USERNAME=root #aluno
+DB_PASSWORD= #anima123
+DB_DATABASE=text_corr
+DB_ENTITIES=dist/**/*.entity{.ts, .js}
+DB_SYNCRONIZE=true
+DB_LOGGING=true
