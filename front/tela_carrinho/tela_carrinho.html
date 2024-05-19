@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShowSpot</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 10em;
+            margin-left:5%;
+        }
+        #menu {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 7em;
+            margin-right: 7%;
+            width: 100%;
+        }
+        .menu-item{
+            font-size: 20px;
+        }
+        #content {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 5em;
+            margin-top: 5%;
+            justify-items: center;
+            align-items: center;
+        }
+        .item-carrinho{
+            max-width: 20%;
+        }
+        .itens {
+            list-style: none;
+            padding: 0
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <h1>ShowSpot</h1>
+        </div>
+        <nav id="menu">
+            <span class="menu-item">Eventos</span>
+            <span class="menu-item">Meus Pedidos</span>
+            <span class="menu-item"><strong>Carrinho</strong></span>
+            <span class="menu-item">Meus Dados</span>
+        </nav>
+    </header>
+    <div class="carrinho">
+        <h2>Seu Carrinho</h2>
+        <ul class="itens">
+            <li>
+                <img src="baileunip.jpg" alt="Item 1" class="item-carrinho">
+                <span>BAILE UNIP</span>
+                <span>Qtde: </span>
+                <span>Valor: </span>
+            </li>
+            <li>
+                <img src="quintauniversitaria.png" alt="Item 2" class="item-carrinho">
+                <span>QUINTA UNIVERSITÁRIA</span>
+                <span>Qtde: </span>
+                <span>Valor: </span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
